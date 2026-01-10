@@ -1,1 +1,37 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-brand-primary: #6366f1; /* Indigo moderne */
+  --color-brand-accent: #f43f5e;  /* Rose/Rouge pour le contraste */
+}
+
+@layer base {
+  :root {
+    /* Mode Clair : Soft & Clean */
+    --bg-main: #f8fafc;
+    --bg-navbar: rgba(248, 250, 252, 0.8);
+    --text-main: #1e293b;
+    --border-color: rgba(0, 0, 0, 0.05);
+  }
+
+  [data-theme='dark'] {
+    /* Mode Sombre : Deep Night Blue (plus élégant que le noir) */
+    --bg-main: #0f172a; 
+    --bg-navbar: rgba(15, 23, 42, 0.8);
+    --text-main: #f1f5f9;
+    --border-color: rgba(255, 255, 255, 0.05);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    @apply transition-colors duration-500;
+  }
+}
+
+.glass-effect {
+  backdrop-filter: blur(12px);
+  background-color: var(--bg-navbar);
+  border-bottom: 2px solid var(--border-color);
+}
