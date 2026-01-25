@@ -36,7 +36,7 @@ export const Skills = () => {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
               Mes compétences<span className="text-brand-primary">.</span>
             </h2>
-            <div className="p-3 w-15 h-15 bg-brand-primary/10 rounded-2xl">
+            <div className="p-3 w-15 h-15 bg-brand-primary/10 rounded-2xl dark:bg-brand-accent">
               <img 
                 src="https://img.icons8.com/?size=100&id=j8sxugcI7DaI&format=png&color=000000" 
                 alt="icon" 
@@ -54,7 +54,7 @@ export const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 dark:text-white"
         >
           {SKILLS.map((skill, index) => (
             <motion.div
@@ -62,7 +62,7 @@ export const Skills = () => {
               variants={cardVariants}
               whileHover={{ 
                 y: -10, 
-                transition: { duration: 0.3 } 
+                transition: { duration: 0.4 } 
               }}
               className="relative group p-8 rounded-[2rem] border border-slate-400 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-brand-primary/10 transition-all"
             >

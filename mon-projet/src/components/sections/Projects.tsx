@@ -40,7 +40,7 @@ export const Projects = () => {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
               Mes Projets<span className="text-brand-primary">.</span>
             </h2>
-            <div className="p-3 w-15 h-15 bg-brand-primary/10 rounded-2xl">
+            <div className="p-3 w-15 h-15 bg-brand-primary/50  rounded-2xl">
               <img 
                 src="https://img.icons8.com/?size=100&id=102552&format=png&color=000000" 
                 alt="liste de projet" 
@@ -62,7 +62,7 @@ export const Projects = () => {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -15 }}
-              className="group relative flex flex-col bg-white dark:bg-white/5 rounded-[2.5rem] overflow-hidden border border-slate-200 dark:border-white/10 hover:border-brand-primary/50 transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-brand-primary/10"
+              className="group relative flex flex-col rounded-[2.5rem] text-brand-accent overflow-hidden border border-slate-500 dark:border-white/10 transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-brand-primary/30"
             >
               {/* Conteneur Image avec zoom */}
               <div className="relative aspect-video overflow-hidden">

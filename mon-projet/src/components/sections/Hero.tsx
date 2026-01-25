@@ -45,18 +45,13 @@ className="text-3xl md:text-5xl font-bold tracking-tight mb-6 bg-clip-text text-
         className="flex flex-wrap justify-center gap-4"
       >
         <a 
-          href="#projects"
+          href="#contact"
           className="flex items-center gap-2 px-8 py-4 bg-brand-primary text-white rounded-full font-semibold hover:bg-brand-primary/90 transition-all hover:scale-105"
         >
-          Voir mes projets
+          Me contacter
           <ArrowRight size={18} />
         </a>
-        <a 
-          href="#contact"
-          className="px-8 py-4 bg-slate-200 dark:bg-white/10 text-slate-900 dark:text-white rounded-full font-semibold hover:bg-slate-300 dark:hover:bg-white/20 transition-all"
-        >
-          Me contacter
-        </a>
+
       </motion.div>
     </div>
   );

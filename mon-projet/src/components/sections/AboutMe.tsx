@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { STATS } from "../../constants/data"
-import logo from "../../assets/my_picture.png"
+import logo from "../../assets/Hoja.jpeg"
 
 
 export const AboutMe = () => {
@@ -8,7 +8,7 @@ export const AboutMe = () => {
     <section id="about" className="px-8 py-24 relative">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-center gap-4">
-          <h2 className="text-4xl md:text-5xl text-center font-black mb-6 text-center dark:text-white tracking-tight ">
+          <h2 className="text-4xl md:text-5xl text-center font-black mb-6 text-center tracking-tight ">
             A Propos de moi<span className="text-brand-primary">.</span>
           </h2>
           <div className="p-3 w-15 h-15 bg-brand-primary/10 rounded-2xl">
@@ -66,7 +66,7 @@ export const AboutMe = () => {
             </div>
 
             {/* Grille de stats rapides */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4  ">
               {STATS.map((stat, index) => (
                 <motion.div
                   key={index}

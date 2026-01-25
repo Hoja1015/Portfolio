@@ -17,7 +17,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Remplace ces 3 valeurs par les tiennes dans ton dashboard EmailJS
+      // ces 3 valeurs dans le  dashboard EmailJS
       await emailjs.sendForm(
         "service_09adk4u",   
         "template_vaep0nq", 
@@ -68,10 +68,10 @@ const Contact = () => {
               >
                 <div className="relative">
                   <div className={`absolute inset-0 bg-gradient-to-br ${method.color} blur-xl opacity-10 group-hover:opacity-30 transition-opacity`} />
-                  <img src={method.icon} alt={method.label} className="w-14 h-14 relative z-10" />
+                  <img src={method.icon} alt={method.label} className="w-14 h-14 relative z-10 " />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-1">{method.label}</p>
+                  <p className="text-[10px] dark: text-white uppercase tracking-[0.2em] text-slate-400 mb-1">{method.label}</p>
                   <p className="font-bold text-slate-900 dark:text-white">{method.value}</p>
                 </div>
               </motion.a>
@@ -107,7 +107,7 @@ const Contact = () => {
               ) : (
                 <form 
                   key="form" 
-                  ref={formRef} // Ajout de la ref ici
+                  ref={formRef} 
                   className="space-y-6" 
                   onSubmit={handleSubmit}
                 >
@@ -115,14 +115,14 @@ const Contact = () => {
                     <div className="space-y-2">
                       <label className="text-xs font-black uppercase tracking-widest ml-2 text-slate-400">Nom et prénom</label>
                       <input 
-                        name="name" required // Assure-toi que "name" correspond à ton template EmailJS
+                        name="name" required
                         type="text" 
                         placeholder="Tapez votre nom ici ..."
                         className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-900/50 border border-slate-200 dark:border-white/10 focus:border-brand-primary outline-none transition-all"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-xs font-black uppercase tracking-widest ml-2 text-slate-400">Email</label>
+                      <label className="text-xs font-white uppercase tracking-widest ml-2 text-slate-400">Email</label>
                       <input 
                         name="email" required // Correspond à {{email}} dans ton template
                         type="email" 

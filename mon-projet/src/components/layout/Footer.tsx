@@ -20,10 +20,12 @@ export const Footer = () => {
               whileHover={{ scale: 1.05 }}
               className="text-3xl font-black tracking-tighter"
             >
-              HojDEV<span className="text-brand-primary">.</span>
+              Hoj<span className="text-brand-primary">DEV</span>.
             </motion.div>
             <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left leading-relaxed">
-              Développeur Fullstack passionné par la création d'interfaces numériques modernes et performantes.
+              Développeur Frond End passionné par la création d'interfaces numériques modernes et performantes.
+              <p className="text-brand-primary"><em>kongbo.hoja@gmail.com</em></p>
+              <p className="text-brand-primary text-lg"><em>+33 06 44 07 92 26</em></p>
             </p>
           </div>
 
@@ -80,6 +82,7 @@ export const Footer = () => {
           <p>© {new Date().getFullYear()} HojDEV — Fait avec ❤️ en France</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-brand-primary transition-colors">Mentions Légales</a>
+            <p>+33 06 44 07 92 26</p>
           </div>
         </div>
       </div>

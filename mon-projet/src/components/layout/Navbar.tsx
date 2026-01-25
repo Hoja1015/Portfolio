@@ -81,7 +81,7 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           <button 
             onClick={toggleTheme}
-            className="p-2 hover:bg-white/10 rounded-full transition-colors"
+            className="p-2 hover:bg-brand-primary rounded-full transition-colors"
             aria-label="Changer de thème"
           >
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -91,6 +91,9 @@ export const Navbar = () => {
 
         {/* BOUTON MENU MOBILE (Burger) */}
         <div className="md:hidden flex items-center gap-4">
+          <button onClick={toggleTheme} className="p-2  hover:bg-brand-primary">
+              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X /> : <Menu />}
           </button>
@@ -120,9 +123,6 @@ export const Navbar = () => {
               <hr className="border-white/10" />
               <div className="flex flex-row justify-center items-center gap-4">
                 <CvButton />
-                <button onClick={toggleTheme} className="p-2">
-                  {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-                </button>
               </div>
             </div>
           </motion.div>

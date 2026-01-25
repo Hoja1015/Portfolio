@@ -1,3 +1,5 @@
+
+
 export interface NavLink {
   label: string;
   href: string;
@@ -65,7 +67,7 @@ export const PROJECTS : typeProjects[] = [
     tags: ["python", "tkinter", "Calendar", "Datetime"],
     github: "#",
     demo: "#",
-    image: "../../public/calendrier-tkinter.png",
+    image: "./assets/calendrier-tkinter.png",
     icon: "https://img.icons8.com/?size=100&id=fYg8cp9LAp4Q&format=png&color=000000"
   },
   {
@@ -74,7 +76,7 @@ export const PROJECTS : typeProjects[] = [
     tags: ["React", "Typescript", "Tailwind", "Framer-Motion", "vercel"],
     github: "https://github.com/Hoja1015/Portfolio",
     demo: "",
-    image: "./src/assets/portfolio.png",
+    image: "./assets/portfolio.png",
     icon: "https://img.icons8.com/fluency/48/artificial-intelligence.png"
   },
   {
