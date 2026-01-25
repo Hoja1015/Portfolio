@@ -1,5 +1,12 @@
 import { Navbar } from "./components/layout/Navbar";
-import { motion, LayoutGroup } from "framer-motion";
+import { motion, LayoutGroup, useScroll } from "framer-motion";
+import Hero from "./components/sections/Hero";  
+import { Skills } from "./components/sections/Skills";
+import Contact  from "./components/sections/Contact"
+import Projects from "./components/sections/Projects";
+import { Footer } from "./components/layout/Footer";
+import { AboutMe } from "./components/sections/AboutMe";
+
 
 
 
@@ -22,15 +29,19 @@ function App() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-center"
             >
+             <Hero />
 
             </motion.div>
+
           </section>
 
           {/* Espace pour les autres sections */}
-          <div className="space-y-32 pb-32">
-            {/* <Projects /> */}
-            {/* <Skills /> */}
-            {/* <Contact /> */}
+          <div>
+            <AboutMe />
+            <Skills />
+            <Projects />
+            <Contact />
+            <Footer />
           </div>
 
         </main>

@@ -2,8 +2,9 @@
 @plugin "daisyui";
 
 @theme {
-  --color-brand-primary: #6366f1; /* Indigo moderne */
-  --color-brand-accent: #f43f5e;  /* Rose/Rouge pour le contraste */
+  --color-brand-primary: #2563eb; /* Bleu */
+  --color-brand-accent: #60a5fa;  /* Bleu clair survol, hove */
+  --color-brand-secondary: #22d3ee
 }
 
 @layer base {
@@ -19,7 +20,7 @@
     /* Mode Sombre : Deep Night Blue (plus élégant que le noir) */
     --bg-main: #0f172a; 
     --bg-navbar: rgba(15, 23, 42, 0.8);
-    --text-main: #f1f5f9;
+    --text-main: #cee2f7;
     --border-color: rgba(255, 255, 255, 0.05);
   }
 
