@@ -1,5 +1,5 @@
 import { Navbar } from "./components/layout/Navbar";
-import { motion, LayoutGroup, useScroll } from "framer-motion";
+import { motion, LayoutGroup } from "framer-motion";
 import Hero from "./components/sections/Hero";  
 import { Skills } from "./components/sections/Skills";
 import Contact  from "./components/sections/Contact"

@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { CONTACT_METHODS } from "../../constants/data";
 
-export const Contact = () => {
+const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   
@@ -162,3 +162,5 @@ export const Contact = () => {
     </section>
   );
 };
+
+export default Contact;
