@@ -21,7 +21,7 @@ export const AboutMe = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 2 }}
             viewport={{ once: true }}
             className="relative"
           >
@@ -58,20 +58,17 @@ export const AboutMe = () => {
                 Maîtriser le code, c’est d’abord savoir lire entre les lignes. Passionné de lecture et d'analyse, 
                 j'ai appris que la puissance d'un système ne réside pas dans l'accumulation d'outils, mais dans l'harmonie de leur assemblage.
                 Ce qui me passionne ? Ce moment précis où des technologies distinctes s'unissent pour résoudre un problème complexe.
-                C'est là que ma curiosité s'anime. Je ne me contente pas de 'faire fonctionner' : je m'exige un code propre, lisible et pérenne. Pour moi,
-                l'autonomie est le moteur de ma progression, mais c'est au sein d'une équipe que mes idées prennent leur véritable envergure.
-                Aujourd'hui, je dispose des fondations et de l'élan nécessaires. Il ne manque plus qu'une mise en situation professionnelle pour transformer ce potentiel en impact concret.
-                Donnez-moi ce coup de pouce, et je me charge de l'envol. Je vous invite à découvrir la trajectoire de mes premiers projets ci-dessous.
+                C'est là que ma curiosité s'anime. Je ne me contente pas de 'faire fonctionner' : je m'exige un code propre, lisible et pérenne.
               </p>
             </div>
 
             {/* Grille de stats rapides */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4  ">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 flex inline-flex ">
               {STATS.map((stat, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ y: -5 }}
-                  className="p-4 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 flex flex-col items-center text-center"
+                  className="p-4 rounded-2xl bg-slate-100 dark:bg-white/5 border border-slate-600 dark:border-white/10 flex flex-col items-center text-center"
                 >
                   <img src={stat.icon} alt={stat.label} className="w-10 h-10 mb-2" />
                   <span className="text-2xl font-black text-brand-primary">{stat.value}</span>

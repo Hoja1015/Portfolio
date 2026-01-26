@@ -6,12 +6,12 @@ const sectionVariants: Variants = {
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.15 }
+    transition: { duration: 1, ease: "easeOut", staggerChildren: 0.15 }
   }
 };
 
 const cardVariants: Variants = {
-  hidden: { opacity: 0, scale: 0.8, y: 30 },
+  hidden: { opacity: 0, scale: 1, y: 30 },
   visible: { 
     opacity: 1, 
     scale: 1, 
@@ -43,9 +43,6 @@ export const Skills = () => {
               />
             </div>
           </div>
-          <h3 className="text-center font-semibold text-xl md:text-2xl tracking-tight">
-            Au fil des années et à l'issue de plusieurs projets j'ai acquis de réelles compétences dans le DEV
-          </h3>
         </motion.div>
 
         {/* Grille animée */}
@@ -62,9 +59,9 @@ export const Skills = () => {
               variants={cardVariants}
               whileHover={{ 
                 y: -10, 
-                transition: { duration: 0.4 } 
+                transition: { duration: 0.6 } 
               }}
-              className="relative group p-8 rounded-[2rem] border border-slate-400 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-brand-primary/10 transition-all"
+              className="relative group p-8 rounded-[2rem] bg-white text-black border border-slate-900 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-sm hover:shadow-2xl hover:shadow-brand-primary/10 transition-all"
             >
               {/* Effet de lueur en arrière-plan au hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-5 transition-opacity rounded-[2rem]`} />
@@ -72,7 +69,7 @@ export const Skills = () => {
               <div className="relative z-10">
                 {/* Icône avec animation de flottement */}
                 <motion.div 
-                  animate={{ y: [0, -5, 0] }}
+                  animate={{ y: [0, -3, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                   className="mb-6 w-16 h-16"
                 >
@@ -83,7 +80,7 @@ export const Skills = () => {
                   />
                 </motion.div>
 
-                <h3 className="font-extrabold text-xl mb-4 dark:text-white text-slate-900">
+                <h3 className="font-extrabold text-xl mb-4 text-black">
                   {skill.category}
                 </h3>
 
@@ -91,7 +88,7 @@ export const Skills = () => {
                   {skill.items.map((item) => (
                     <span 
                       key={item} 
-                      className="text-sm font-medium px-3 py-1 rounded-lg bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-white/5"
+                      className="text-sm font-medium px-3 py-1 border-3 rounded-lg bg-slate-100 dark:bg-white/20 text-black dark:text-slate-300 border border-slate-200 dark:border-white/5"
                     >
                       {item}
                     </span>

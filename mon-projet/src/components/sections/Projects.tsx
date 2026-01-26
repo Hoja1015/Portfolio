@@ -62,14 +62,14 @@ export const Projects = () => {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -15 }}
-              className="group relative flex flex-col rounded-[2.5rem] text-brand-accent overflow-hidden border border-slate-500 dark:border-white/10 transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-brand-primary/30"
+              className="group relative flex flex-col rounded-[2.5rem] text-brand-accent overflow-hidden border-2 border-slate-500 dark:border-white/10 transition-all duration-500 shadow-xl hover:shadow-2xl hover:shadow-brand-primary/30"
             >
               {/* Conteneur Image avec zoom */}
               <div className="relative aspect-video overflow-hidden">
                 <motion.img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-10"
                 />
                 
                 {/* Overlay au hover */}
@@ -100,7 +100,7 @@ export const Projects = () => {
               {/* Contenu textuel */}
               <div className="p-8 flex flex-col flex-grow relative">
                 {/* Badge Icône flottant */}
-                <div className="absolute -top-10 right-8 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-xl border border-slate-100 dark:border-white/10">
+                <div className="absolute -top-10 right-8 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-xl -2 -2-slate-100 dark:border-white/10">
                   <img src={project.icon} alt="project icon" className="w-8 h-8" />
                 </div>
 
@@ -108,7 +108,7 @@ export const Projects = () => {
                   {project.title}
                 </h3>
                 
-                <p className="text-slate-600 dark:text-slate-400 text-sm mb-8 leading-relaxed line-clamp-3">
+                <p className="text-slate-700 dark:text-slate-300 text-sm mb-8 leading-relaxed line-clamp-3">
                   {project.description}
                 </p>
 
@@ -117,7 +117,7 @@ export const Projects = () => {
                   {project.tags.map((tag) => (
                     <span 
                       key={tag}
-                      className="px-4 py-1.5 text-[10px] font-black uppercase tracking-widest rounded-xl bg-slate-100 dark:bg-white/10 text-slate-500 dark:text-slate-300 border border-slate-200 dark:border-white/5"
+                      className="px-4 py-1.5 text-[10px] font-black uppercase tracking-widest rounded-xl bg-slate-100 dark:bg-white/10 text-black dark:text-slate-300 border-2 border-slate-300 dark:border-white/5"
                     >
                       {tag}
                     </span>

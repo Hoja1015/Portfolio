@@ -17,7 +17,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // ces 3 valeurs dans le  dashboard EmailJS
+      // ces 3 valeurs dans le dashboard EmailJS
       await emailjs.sendForm(
         "service_09adk4u",   
         "template_vaep0nq", 
@@ -64,15 +64,15 @@ const Contact = () => {
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ x: 10 }}
-                className="flex items-center gap-6 p-6 rounded-[2rem] border border-slate-200 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-xl group transition-all"
+                className="flex items-center gap-6 p-6 rounded-[2rem] border-1 border-slate-500 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-xl group transition-all"
               >
                 <div className="relative">
                   <div className={`absolute inset-0 bg-gradient-to-br ${method.color} blur-xl opacity-10 group-hover:opacity-30 transition-opacity`} />
-                  <img src={method.icon} alt={method.label} className="w-14 h-14 relative z-10 " />
+                  <img src={method.icon} alt={method.label} className="w-14 h-14 relative z-10" />
                 </div>
                 <div>
-                  <p className="text-[10px] dark: text-white uppercase tracking-[0.2em] text-slate-400 mb-1">{method.label}</p>
-                  <p className="font-bold text-slate-900 dark:text-white">{method.value}</p>
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-600 mb-1">{method.label}</p>
+                  <p className="font-bold text-black dark:text-white">{method.value}</p>
                 </div>
               </motion.a>
             ))}
@@ -83,7 +83,7 @@ const Contact = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 p-8 md:p-12 rounded-[2.5rem] border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 backdrop-blur-xl relative overflow-hidden shadow-2xl shadow-brand-primary/5"
+            className="lg:col-span-2 p-8 md:p-12 rounded-[2.5rem] border-1 border-slate-500 dark:border-white/10 bg-white dark:bg-white/5 backdrop-blur-xl relative overflow-hidden shadow-2xl shadow-brand-primary/5"
           >
             <AnimatePresence mode="wait">
               {isSuccess ? (
@@ -108,37 +108,37 @@ const Contact = () => {
                 <form 
                   key="form" 
                   ref={formRef} 
-                  className="space-y-6" 
+                  className="space-y-6 " 
                   onSubmit={handleSubmit}
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-xs font-black uppercase tracking-widest ml-2 text-slate-400">Nom et prénom</label>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                    <div className="space-y-2 ">
+                      <label className="text-xs font-black uppercase tracking-widest ml-2 text-slate-500">Nom et prénom</label>
                       <input 
                         name="name" required
                         type="text" 
                         placeholder="Tapez votre nom ici ..."
-                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-900/50 border border-slate-200 dark:border-white/10 focus:border-brand-primary outline-none transition-all"
+                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-700/50 border-1 border-slate-500 dark:border-white/10 focus:border-brand-primary outline-none transition-all"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-xs font-white uppercase tracking-widest ml-2 text-slate-400">Email</label>
+                      <label className="text-xs font-black uppercase tracking-widest ml-2 text-slate-500">Email</label>
                       <input 
-                        name="email" required // Correspond à {{email}} dans ton template
+                        name="email" required 
                         type="email" 
                         placeholder="email@example.com"
-                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-900/50 border border-slate-200 dark:border-white/10 focus:border-brand-primary outline-none transition-all"
+                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-700/50 border-1 border-slate-500 dark:border-white/10 focus:border-brand-primary outline-none transition-all"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs font-black uppercase tracking-widest ml-2 text-slate-400">Message</label>
+                    <label className="text-xs font-black uppercase tracking-widest ml-2 text-slate-500">Message</label>
                     <textarea 
-                      name="message" required // Correspond à {{message}} dans ton template
+                      name="message" required 
                       rows={4}
                       placeholder="Comment puis-je vous aider ?"
-                      className="w-full px-6 py-4 rounded-3xl bg-slate-50 dark:text-black dark:bg-slate-900/50 border border-slate-200 dark:border-white/10 focus:border-brand-primary outline-none transition-all resize-none"
+                      className="w-full px-6 py-4 rounded-3xl bg-slate-50 dark:text-black dark:bg-slate-900/50 border-1 border-slate-500 dark:border-white/10 focus:border-brand-primary outline-none transition-all resize-none"
                     />
                   </div>
 

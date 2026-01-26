@@ -32,19 +32,19 @@ export const SKILLS:typeSkills[] = [
     category: "Backend",
     icon: "https://img.icons8.com/fluency/96/node-js.png",
     items: ["Node.js", "FastApi", "Python"],
-    color: "from-green-400 to-emerald-600"
+    color: "from-green-400 to-emerald-800"
   },
   {
     category: "Outils",
     icon: "https://img.icons8.com/fluency/96/docker.png",
     items: [ "Git/GitHub", "Vercel", "Laragon", "Figma"],
-    color: "from-blue-500 to-indigo-600"
+    color: "from-blue-500 to-indigo-800"
   },
   {
     category: "En cours",
     icon: "https://img.icons8.com/?size=100&id=2msi5wIpPPec&format=png&color=000000",
     items: [ "Express", "Symphony", "Docker" ],
-    color: "from-pink-500 to-rose-500"
+    color: "from-pink-500 to-rose-900"
   }
 ];
 
@@ -67,16 +67,16 @@ export const PROJECTS : typeProjects[] = [
     tags: ["python", "tkinter", "Calendar", "Datetime"],
     github: "#",
     demo: "#",
-    image: "./assets/calendrier-tkinter.png",
+    image: "../src/assets/calendrier-tkinter.png",
     icon: "https://img.icons8.com/?size=100&id=fYg8cp9LAp4Q&format=png&color=000000"
   },
   {
     title: "Portfolio Moderne",
     description: "Mon site qui met en valeur mon identité, ce que je recherche et surtout ce que je sais faire avec les technologies que j'ai appris ",
     tags: ["React", "Typescript", "Tailwind", "Framer-Motion", "vercel"],
-    github: "https://github.com/Hoja1015/Portfolio",
-    demo: "",
-    image: "./assets/portfolio.png",
+    github: "https://github.com/Hoja1015/Portfolio/tree/main/mon-projet",
+    demo: "https://portfolio-b2-three.vercel.app",
+    image: "../src/assets/portfolio.png",
     icon: "https://img.icons8.com/fluency/48/artificial-intelligence.png"
   },
   {
@@ -98,8 +98,8 @@ icon: string
  }
 
 export const STATS: typeStat[] = [
-  { label: "Années d'expérience", value: "2", icon: "https://img.icons8.com/fluency/48/guarantee.png" },
-  { label: "Projets terminés", value: "15+", icon: "https://img.icons8.com/fluency/48/opened-folder.png" },
+  { label: "Années d'expérience", value: "2+", icon: "https://img.icons8.com/fluency/48/guarantee.png" },
+  { label: "Projets terminés", value: "10+", icon: "https://img.icons8.com/fluency/48/opened-folder.png" },
   { label: "Technologies maîtrisées", value: "10+", icon: "https://img.icons8.com/fluency/48/layers.png" },
 ];
 
@@ -125,7 +125,7 @@ export const CONTACT_METHODS: typeContact[] = [
     value: "Hoja Le brillant KONGBO BINDRO",
     icon: "https://img.icons8.com/fluency/96/linkedin.png",
     color: "from-blue-600 to-blue-800",
-    link: "https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"
+    link: "https://www.linkedin.com/in/hoja-le-brillant-kongbo-bindro-0848b1284/"
   },
   {
     label: "Localisation",
