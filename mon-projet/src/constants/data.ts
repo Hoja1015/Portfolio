@@ -67,7 +67,7 @@ export const PROJECTS : typeProjects[] = [
     tags: ["python", "tkinter", "Calendar", "Datetime"],
     github: "#",
     demo: "#",
-    image: "../src/assets/calendrier-tkinter.png",
+    image: "https://i.ibb.co/hRyLmFBv/calendrier-tkinter.png",
     icon: "https://img.icons8.com/?size=100&id=fYg8cp9LAp4Q&format=png&color=000000"
   },
   {
@@ -75,8 +75,8 @@ export const PROJECTS : typeProjects[] = [
     description: "Mon site qui met en valeur mon identité, ce que je recherche et surtout ce que je sais faire avec les technologies que j'ai appris ",
     tags: ["React", "Typescript", "Tailwind", "Framer-Motion", "vercel"],
     github: "https://github.com/Hoja1015/Portfolio/tree/main/mon-projet",
-    demo: "https://portfolio-b2-three.vercel.app",
-    image: "../src/assets/portfolio.png",
+    demo: "#",
+    image: "https://i.ibb.co/7JxzLS5h/portfolio.png",
     icon: "https://img.icons8.com/fluency/48/artificial-intelligence.png"
   },
   {
