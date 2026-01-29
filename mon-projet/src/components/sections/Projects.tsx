@@ -44,6 +44,7 @@ export const Projects = () => {
               <img 
                 src="https://img.icons8.com/?size=100&id=102552&format=png&color=000000" 
                 alt="liste de projet" 
+                loading="lazy"
               />
             </div>
           </div>
@@ -69,6 +70,7 @@ export const Projects = () => {
                 <motion.img 
                   src={project.image} 
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-10"
                 />
                 
@@ -85,7 +87,7 @@ export const Projects = () => {
                     <Github size={24} />
                   </motion.a>
                   <motion.a 
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{ scale: 0.9 }}
                     whileTap={{ scale: 0.9 }}
                     href={project.demo} 
                     target="_blank"
@@ -101,7 +103,7 @@ export const Projects = () => {
               <div className="p-8 flex flex-col flex-grow relative">
                 {/* Badge Icône flottant */}
                 <div className="absolute -top-10 right-8 bg-white dark:bg-slate-800 p-3 rounded-2xl shadow-xl -2 -2-slate-100 dark:border-white/10">
-                  <img src={project.icon} alt="project icon" className="w-8 h-8" />
+                  <img src={project.icon} alt="project icon" className="w-8 h-8" loading="lazy"/>
                 </div>
 
                 <h3 className="text-2xl font-black mb-4 dark:text-white text-slate-900 group-hover:text-brand-primary transition-colors tracking-tight">

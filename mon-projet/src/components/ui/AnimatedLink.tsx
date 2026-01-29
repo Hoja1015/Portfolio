@@ -19,7 +19,7 @@ export const AnimatedLink = ({ label, href, isActive, onClick }: AnimatedLinkPro
         <motion.span
           layoutId="nav-pill" /* Framer : l'élément glisse d'un lien à l'autre */
           className="absolute inset-0 z-[-1] bg-white/10 rounded-full"
-          transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+          transition={{ type: "spring", bounce: 0.3, duration: 0.7 }}
         />
       )}
     </a>

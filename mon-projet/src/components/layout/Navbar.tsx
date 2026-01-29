@@ -66,7 +66,7 @@ export const Navbar = () => {
         </motion.div>
 
         {/* NAVIGATION DESKTOP : Liens avec pilule animée */}
-        <div className="hidden md:flex items-center gap-2 bg-white/5 p-1 rounded-full border border-white/10">
+        <div className="hidden md:flex items-center gap-2 bg-white/5 p-1 rounded-full border border-white/20">
           {NAV_LINKS.map((link) => (
             <AnimatedLink
               key={link.href}
@@ -107,7 +107,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-brand-bg border-b border-white/10 overflow-hidden"
+            className="md:hidden bg-brand-bg border-b border-white/20 overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {NAV_LINKS.map((link) => (
@@ -120,7 +120,7 @@ export const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <hr className="border-white/10" />
+              <hr className="border-white/20" />
               <div className="flex flex-row justify-center items-center gap-4">
                 <CvButton />
               </div>

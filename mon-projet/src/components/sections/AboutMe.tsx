@@ -8,7 +8,7 @@ export const AboutMe = () => {
     <section id="about" className="px-8 py-24 relative">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-center gap-4">
-          <h2 className="text-4xl md:text-5xl text-center font-black mb-6 text-center tracking-tight ">
+          <h2 className="text-4xl md:text-5xl text-center font-black mb-6 tracking-tight">
             A Propos de moi<span className="text-brand-primary">.</span>
           </h2>
           <div className="p-3 w-15 h-15 bg-brand-primary/10 rounded-2xl">
@@ -52,11 +52,11 @@ export const AboutMe = () => {
             <div className="space-y-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
               <p>
                 Ma famille m'avait destiné à l'étude de medecine, j'ai choisi l'architecture des systèmes.
-                Aujourd'hui je suis + qu'heureux d'avoir suivi ma propre voie.
+                Aujourd'hui je suis plus qu'heureux d'avoir suivi ma propre voie.
               </p>
               <p>
                 Maîtriser le code, c’est d’abord savoir lire entre les lignes. Passionné de lecture et d'analyse, 
-                j'ai appris que la puissance d'un système ne réside pas dans l'accumulation d'outils, mais dans l'harmonie de leur assemblage.
+                j'ai appris que la puissance d'un système ne réside pas dans l'accumulation d'outils, mais dans l'harmonie de leur assemblage. <br /> <br />
                 Ce qui me passionne ? Ce moment précis où des technologies distinctes s'unissent pour résoudre un problème complexe.
                 C'est là que ma curiosité s'anime. Je ne me contente pas de 'faire fonctionner' : je m'exige un code propre, lisible et pérenne.
               </p>

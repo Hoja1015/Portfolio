@@ -94,7 +94,7 @@ const Contact = () => {
                   exit={{ opacity: 0, y: -20 }}
                   className="text-center py-10"
                 >
-                  <img src="https://img.icons8.com/fluency/96/ok.png" className="w-20 h-20 mx-auto mb-6" alt="Succès" />
+                  <img src="https://img.icons8.com/fluency/96/ok.png" className="w-20 h-20 mx-auto mb-6" alt="reponse avecSuccès" />
                   <h3 className="text-2xl font-black mb-2">Message envoyé !</h3>
                   <p className="text-slate-500 mb-8">Merci! Je reviens vers vous très rapidement.</p>
                   <button 
@@ -117,8 +117,9 @@ const Contact = () => {
                       <input 
                         name="name" required
                         type="text" 
+                        id="name"
                         placeholder="Tapez votre nom ici ..."
-                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-700/50 border-1 border-slate-500 dark:border-white/10 focus:border-brand-primary outline-none transition-all"
+                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-700/50 border-1  text-black border-slate-500 dark:border-white/10  focus:border-brand-primary outline-none transition-all"
                       />
                     </div>
                     <div className="space-y-2">
@@ -127,7 +128,7 @@ const Contact = () => {
                         name="email" required 
                         type="email" 
                         placeholder="email@example.com"
-                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 dark:text-black dark:bg-slate-700/50 border-1 border-slate-500 dark:border-white/10 focus:border-brand-primary outline-none transition-all"
+                        className="w-full px-6 py-4 rounded-2xl bg-slate-50  dark:bg-slate-700/50 border-1 border-slate-500 text-black dark:border-white/10 focus:border-brand-primary outline-none transition-all"
                       />
                     </div>
                   </div>
@@ -138,7 +139,7 @@ const Contact = () => {
                       name="message" required 
                       rows={4}
                       placeholder="Comment puis-je vous aider ?"
-                      className="w-full px-6 py-4 rounded-3xl bg-slate-50 dark:text-black dark:bg-slate-900/50 border-1 border-slate-500 dark:border-white/10 focus:border-brand-primary outline-none transition-all resize-none"
+                      className="w-full px-6 py-4 rounded-3xl bg-slate-50 dark:text-black dark:bg-slate-900/50 border-1  text-black border-slate-500 dark:border-white/10 focus:border-brand-primary outline-none transition-all resize-none"
                     />
                   </div>
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Terminal } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -11,7 +11,6 @@ const Hero = () => {
         transition={{ duration: 0.5 }}
         className="inline-flex items-center gap-2 px-3 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-sm mb-6"
       >
-        <Terminal size={20} />
         <span>Hoja Le brillant KONGBO</span>
       </motion.div>
 
@@ -20,9 +19,9 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-className="text-3xl md:text-5xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600"
+        className="text-3xl md:text-5xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600"
       >
-        Développeur Front End <br /> 
+        Développeur Front End <br />
         <span className="text-brand-primary">Aspirant Full-stack</span>
       </motion.h1>
 
@@ -33,8 +32,8 @@ className="text-3xl md:text-5xl font-bold tracking-tight mb-6 bg-clip-text text-
         transition={{ delay: 0.3 }}
         className="max-w-2xl text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed"
       >
-       Etudiant en 2e année de bachelor à Ecole-IT, je recheche une opportunité d'alternance ou de stage pour la rentrée de septembre.<br />
-       Très motivé à évoluer dans un cadre professionnel pour apprendre et apporter une valeur ajoutée aux prochains defis à reléver
+        Etudiant en 2e année de bachelor à Ecole-IT, je recheche une opportunité d'alternance ou de stage pour la rentrée de septembre 2026-2027.<br />
+        Très motivé à évoluer dans un cadre professionnel pour apprendre et apporter une valeur ajoutée aux prochains defis à reléver
       </motion.p>
 
       {/* Boutons d'action */}
@@ -44,7 +43,7 @@ className="text-3xl md:text-5xl font-bold tracking-tight mb-6 bg-clip-text text-
         transition={{ delay: 0.4 }}
         className="flex flex-wrap justify-center gap-4"
       >
-        <a 
+        <a
           href="#contact"
           className="flex items-center gap-2 px-8 py-4 bg-brand-primary text-white rounded-full font-semibold hover:bg-brand-primary/90 transition-all hover:scale-105"
         >

@@ -25,14 +25,14 @@ export const SKILLS:typeSkills[] = [
   {
     category: "Frontend",
     icon: "https://img.icons8.com/?size=100&id=fD9sSf7OsNzI&format=png&color=000000.png",
-    items: ["Javascript", "TypeScript", "React", "Vue.js", "Angular", "Tailwind", "Boostrap", "Framer Motion"],
-    color: "from-blue-400 to-cyan-500"
+    items: ["Javascript", "TypeScript", "React", "Vue.js", "Angular", "Tailwind", "Boostrap"],
+    color: "from-blue-500 to-cyan-800"
   },
   {
     category: "Backend",
     icon: "https://img.icons8.com/fluency/96/node-js.png",
     items: ["Node.js", "FastApi", "Python"],
-    color: "from-green-400 to-emerald-800"
+    color: "from-green-500 to-emerald-800"
   },
   {
     category: "Outils",
@@ -43,7 +43,7 @@ export const SKILLS:typeSkills[] = [
   {
     category: "En cours",
     icon: "https://img.icons8.com/?size=100&id=2msi5wIpPPec&format=png&color=000000",
-    items: [ "Express", "Symphony", "Docker" ],
+    items: [ "Express", "Symphony", "Docker", "Framer Motion" ],
     color: "from-pink-500 to-rose-900"
   }
 ];
@@ -74,18 +74,18 @@ export const PROJECTS : typeProjects[] = [
     title: "Portfolio Moderne",
     description: "Mon site qui met en valeur mon identité, ce que je recherche et surtout ce que je sais faire avec les technologies que j'ai appris ",
     tags: ["React", "Typescript", "Tailwind", "Framer-Motion", "vercel"],
-    github: "https://github.com/Hoja1015/Portfolio/tree/main/mon-projet",
+    github: "https://github.com/Hoja1015/Portfolio",
     demo: "#",
     image: "https://i.ibb.co/7JxzLS5h/portfolio.png",
     icon: "https://img.icons8.com/fluency/48/artificial-intelligence.png"
   },
   {
-    title: "Gestionnaire de Tâches",
+    title: "Dashboard Admin",
     description: "Application PWA permettant une gestion de projet agile avec drag-and-drop et notifications push.",
     tags: ["Vue.js", "javascript", "Node.js", "Github"],
-    github: "#",
+    github: "https://github.com/ASSOLOU/projet-fil-rouge",
     demo: "#",
-    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=800&q=80",
+    image: "https://i.ibb.co/mL4BNZQ/Dashboard-vue.png",
     icon: "https://img.icons8.com/fluency/48/todo-list.png"
   }
 ];
@@ -115,10 +115,10 @@ interface typeContact {
 export const CONTACT_METHODS: typeContact[] = [
   {
     label: "Email",
-    value: "hojalebrillant@outlook.com",
+    value: "kongbo.hoja@gmail.com",
     icon: "https://img.icons8.com/fluency/96/mail.png",
-    color: "from-blue-400 to-indigo-500",
-    link: "hojalebrillant@outlook.com"
+    color: "from-blue-400 to-indigo-700",
+    link: "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
   },
   {
     label: "LinkedIn",
@@ -131,7 +131,7 @@ export const CONTACT_METHODS: typeContact[] = [
     label: "Localisation",
     value: "Orléans, Paris, France",
     icon: "https://img.icons8.com/fluency/96/marker.png",
-    color: "from-orange-400 to-red-500",
+    color: "from-orange-400 to-red-700",
   }
 ];
 
@@ -144,6 +144,6 @@ interface typeFooter {
 
 export const SOCIALS: typeFooter[] = [
   { name: "GitHub", icon: "https://img.icons8.com/fluency/48/github.png", link: "https://github.com/" },
-  { name: "LinkedIn", icon: "https://img.icons8.com/fluency/48/linkedin.png", link: "#" },
+  { name: "LinkedIn", icon: "https://img.icons8.com/fluency/48/linkedin.png", link: "https://www.linkedin.com/in/hoja-le-brillant-kongbo-bindro-0848b1284/" },
   { name: "Instagram", icon: "https://img.icons8.com/fluency/48/instagram-new.png", link: "https://www.instagram.com/hoja_lb/" },
 ];
