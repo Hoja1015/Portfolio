@@ -4,7 +4,7 @@ import { Download } from "lucide-react";
 export const CvButton = () => {
   return (
     <motion.a
-      href="../public/CV_Hoja_KONGBO.alternance.pdf"
+      href="/CV_Hoja_KONGBO.alternance.pdf"
       download="CV_Hoja_KONGBO.pdf"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
